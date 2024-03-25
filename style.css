@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 50%);
+    --mistletoe: hsl(100, 60%, 10%);
+    --unsure: hsl(338, 10%, 98%);
+    --eggshell: hsl(38, 54%, 98%);
+    --mint-grey: hsl(30, 18%, 87.5%);
+    --wenge-brown: hsl(38, 10%, 34%);
+    --dark-charcoal: hsl(124, 53%, 15%);
+}
+
+body {
+    background-color: var(--eggshell);
+    color: var(--wenge-brown);
+    min-height: 100vh;
+    line-height: 1.4;
+    display: grid;
+    place-content: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    color: var(--nutmeg);
+    font-size: 1.8rem;
+}
+
+.recipe-information {
+    margin: 1rem 0;
+}
+
+.recipe-ingredients {
+    margin: 1rem 0;
+}
+
+ul {
+    padding-left: 1.25rem;
+}
+
+ul li {
+    margin-bottom: .5rem;
+}
+
+ul li::marker {
+    color: var(--nutmeg);
+}
+
+ul li span {
+    color: var(--wenge-brown);
+    margin-left: 1rem;
+    font-weight: 700;
+}
+
+hr {
+    border: 1px solid var(--mint-grey);
+    margin: 1rem 0;
+}
+
+.container {
+    max-width: 800px;
+    background-color: var(--white);
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.container .recipe img {
+    padding: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.recipe-information {
+    padding: 0rem 2rem 2rem 2rem;
+}
+
+.description {
+    margin: 1.5rem;
+}
+
+.recipe-prep-time {
+    background-color: var(--eggshell);
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+
+.recipe-prep-time h3 {
+    color: var(--dark-charcoal);
+    margin-bottom: .75rem;
+}
+
+.recipe-prep-time ul li::marker {
+    color: var(--dark-raspberry);
+}
+
+.recipe-ingredients li {
+    margin-bottom: .5rem;
+}
+
+
